@@ -1,4 +1,5 @@
 body {
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,109 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.boy {
+  position: absolute;
+  width: 295px;
+  height: 343px;
+  right: 0;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gameBoard {
+  position: relative;
+  display: flex;
+  height: 327px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  margin-top: 98px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  display: block;
+  border-radius: 8px;
+  background-size: cover;
+  background-color: antiquewhite;
+  width: 51px;
+  height: 43px;
+  border: none;
+
+}
+
+.game-zone {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 385px;
+  margin: 17px 0px 0px 12px;
+  height: 270px;
+}
+
+.flip-box {
+  background-color: transparent;
+  perspective: 1000px;
+  margin: 2px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+
+/* Style the back side */
+.flip-box-back {
+  background-color: antiquewhite;
+  transform: rotateY(180deg);
+}
+
+.menu-page {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://www.tynker.com/medialib/5b2d9b09a2dff8ca4c8a284f.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 800;
 }
