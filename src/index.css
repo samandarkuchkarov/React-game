@@ -39,7 +39,7 @@ code {
   background-size: contain;
   background-repeat: no-repeat;
   width: 500px;
-  margin-top: 98px;
+  margin-top: 15px;
   align-items: center;
   justify-content: center;
 
@@ -104,6 +104,7 @@ code {
 }
 
 .menu-page {
+  text-align: center;
   width: 100vw;
   height: 100vh;
   background-image: url('https://www.tynker.com/medialib/5b2d9b09a2dff8ca4c8a284f.png');
@@ -116,4 +117,69 @@ code {
 a {
   text-decoration: none;
   font-weight: 800;
+}
+
+.statistic {
+  display: flex;
+  justify-content: space-around;
+  background: antiquewhite;
+  width: 500px;
+  position: absolute;
+  z-index: 5;
+  height: 30px;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.win {
+  width: 400px;
+  background-size: cover;
+  height: 400px;
+}
+
+.row {
+  background: wheat;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+  border-radius: 50px;
+  line-height: 25px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  border: 1px solid lightsteelblue;
+}
+
+.audio-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 130px;
+
+}
+
+.audio-img {
+  width: 50px;
+  height: 50px;
+}
+
+.audio-block {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.left {
+  justify-content: center;
+}
+
+.home {
+
+  width: 130px;
+  height: 130px;
+  background-size: cover;
+  margin: 20px auto 0;
+
 }
